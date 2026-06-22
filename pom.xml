@@ -7,4 +7,27 @@
     <version>0.1.0</version>
     <name>java-ode</name>
     <description>Opinionated delivery engine for Java applications.</description>
+    <url>https://github.com/animalab-netizen/java-ode</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>ÂnimaLab</name>
+            <email>animalab.desenvolvimento@gmail.com</email>
+            <organization>ÂnimaLab</organization>
+            <organizationUrl>https://github.com/animalab-netizen</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/animalab-netizen/java-ode.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/animalab-netizen/java-ode.git</developerConnection>
+        <url>https://github.com/animalab-netizen/java-ode</url>
+    </scm>
 </project>

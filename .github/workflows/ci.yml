@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Compile runtime and tests
+        run: |
+          mkdir -p out
+          javac -d out $(find src/main/java src/test/java -name "*.java")
+
+      - name: Run assertions
+        run: java -ea -cp out io.github.animalab.ode.RuntimeTest
